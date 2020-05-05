@@ -28,8 +28,7 @@ namespace Bertoni.Service.Controllers
         [HttpGet]
         public async Task<Response<AlbumOutputModel>> Get(int id)
         {
-            var result = await _albumDomain.getAll();
-            return _mapper.Map<Response<AlbumOutputModel>>(result);
+            return await _albumDomain.getAll();
         }
     }
 }

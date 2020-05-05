@@ -8,6 +8,7 @@ using Bertoni.Domain.Entity;
 using Bertoni.Infraestructure.Entity;
 using Bertoni.Infraestructure.Interface;
 using Bertoni.Infraestructure.Repository;
+using Bertoni.Service.Entity;
 using Bertoni.Transversal;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -38,7 +39,7 @@ namespace Bertoni.Service
             services.AddSingleton(iMapper);
 
             services.AddScoped<InterfaceAlbumDomain, AlbumDomain>();
-            services.AddScoped<InterfaceAlbumRepository<AlbumDTO>, AlbumRepository>();
+            services.AddScoped<InterfaceAlbumRepository<AlbumOutputModel>, AlbumRepository>();
 
         }
 

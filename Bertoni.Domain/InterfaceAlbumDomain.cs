@@ -1,5 +1,6 @@
 ﻿using Bertoni.Domain.Entity;
 using Bertoni.Infraestructure.Entity;
+using Bertoni.Service.Entity;
 using Bertoni.Transversal;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,6 @@ namespace Bertoni.Domain
 {
     public interface InterfaceAlbumDomain
     {
-        Task<Response<AlbumDTO>> getAll();
+        Task<Response<AlbumOutputModel>> getAll();
     }
 }

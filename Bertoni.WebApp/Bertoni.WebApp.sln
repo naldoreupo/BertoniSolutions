@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bertoni.Service.Entity", ".
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bertoni.Transversal", "..\Bertoni.Transversal\Bertoni.Transversal.csproj", "{B17CF702-1E21-42E6-9836-A5C45A6BED15}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bertoni.Domain.Test", "..\Bertoni.Domain.Test\Bertoni.Domain.Test.csproj", "{7F621246-179E-4247-8EC2-B22D0E777BDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{B17CF702-1E21-42E6-9836-A5C45A6BED15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B17CF702-1E21-42E6-9836-A5C45A6BED15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B17CF702-1E21-42E6-9836-A5C45A6BED15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F621246-179E-4247-8EC2-B22D0E777BDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F621246-179E-4247-8EC2-B22D0E777BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F621246-179E-4247-8EC2-B22D0E777BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F621246-179E-4247-8EC2-B22D0E777BDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +86,7 @@ Global
 		{B9CDDEAA-F0EB-49C5-92C1-92C3E8BD3E66} = {A321CBE8-433D-4414-B580-B80AE2E40052}
 		{50B71843-EF6C-4A3F-8C10-493E3B5C6091} = {A321CBE8-433D-4414-B580-B80AE2E40052}
 		{B17CF702-1E21-42E6-9836-A5C45A6BED15} = {AD520A39-9ECA-44C2-BBDA-DA6947AA438C}
+		{7F621246-179E-4247-8EC2-B22D0E777BDB} = {A308CC33-A7A4-4A53-89A6-F2CF4CFD09CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3DD84E46-B043-4A1B-BEE7-B593C62B337F}

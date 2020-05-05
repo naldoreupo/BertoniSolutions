@@ -11,6 +11,6 @@ namespace Bertoni.Transversal
 
         public TEntity Data { get; set; }
 
-        public List<TEntity> List { get; set; }
+        public IEnumerable<TEntity> List { get; set; }
     }
 }

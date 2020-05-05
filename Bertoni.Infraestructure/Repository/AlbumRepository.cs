@@ -1,6 +1,7 @@
 ﻿using Bertoni.Domain.Entity;
 using Bertoni.Infraestructure.Entity;
 using Bertoni.Infraestructure.Interface;
+using Bertoni.Service.Entity;
 using Bertoni.Transversal;
 using Newtonsoft.Json;
 using System;
@@ -13,21 +14,21 @@ using System.Threading.Tasks;
 
 namespace Bertoni.Infraestructure.Repository
 {
-    public class AlbumRepository : InterfaceAlbumRepository<AlbumDTO>
+    public class AlbumRepository : InterfaceAlbumRepository<AlbumOutputModel>
     {
         HttpClient client = new HttpClient();
 
-        public async Task<Response<AlbumDTO>> GetAll()
+        public async Task<Response<AlbumOutputModel>> GetAll()
         {
-            List<AlbumDTO> albums = new List<AlbumDTO>();
+            IEnumerable<AlbumOutputModel> albums ;
 
             using (var client = new HttpClient())
             {
                 var content = await client.GetStringAsync("https://jsonplaceholder.typicode.com/albums");
-                albums = JsonConvert.DeserializeObject<List<AlbumDTO>>(content);
+                albums = JsonConvert.DeserializeObject<IEnumerable<AlbumOutputModel>>(content);
             }
 
-            return new Response<AlbumDTO>() { Status = true, List =albums };
+            return new Response<AlbumOutputModel>() { Status = true, Message = "albus return" , List =albums };
         }
     }
 }

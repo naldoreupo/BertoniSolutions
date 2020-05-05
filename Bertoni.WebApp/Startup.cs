@@ -2,6 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Bertoni.Domain;
+using Bertoni.Infraestructure.Interface;
+using Bertoni.Infraestructure.Repository;
+using Bertoni.Service.Entity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,6 +28,11 @@ namespace Bertoni.WebApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            //IMapper iMapper = Maps.InitMapper();
+            //services.AddSingleton(iMapper);
+
+            services.AddScoped<InterfaceAlbumDomain, AlbumDomain>();
+            services.AddScoped<InterfaceAlbumRepository<AlbumOutputModel>, AlbumRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
