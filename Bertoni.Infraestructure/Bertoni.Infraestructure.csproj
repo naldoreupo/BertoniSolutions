@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Interface\InterfaceGenericRepository.cs" />
+    <Compile Remove="Interface\InterfaceUnitOfWork.cs" />
+    <Compile Remove="Repository\GenericRepository.cs" />
+    <Compile Remove="Repository\UnitOfWork.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bertoni.Domain.Entity\Bertoni.Domain.Entity.csproj" />
+    <ProjectReference Include="..\Bertoni.Transversal\Bertoni.Transversal.csproj" />
+  </ItemGroup>
+
+</Project>

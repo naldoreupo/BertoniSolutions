@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bertoni.Domain.Entity\Bertoni.Domain.Entity.csproj" />
+    <ProjectReference Include="..\Bertoni.Domain\Bertoni.Domain.csproj" />
+    <ProjectReference Include="..\Bertoni.Infraestructure.Entity\Bertoni.Infraestructure.Entity.csproj" />
+    <ProjectReference Include="..\Bertoni.Infraestructure\Bertoni.Infraestructure.csproj" />
+    <ProjectReference Include="..\Bertoni.Service.Entity\Bertoni.Service.Entity.csproj" />
+    <ProjectReference Include="..\Bertoni.Transversal\Bertoni.Transversal.csproj" />
+  </ItemGroup>
+
+
+</Project>

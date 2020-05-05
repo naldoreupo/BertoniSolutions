@@ -140,6 +140,36 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
+      },
+      "Bertoni.Domain.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Bertoni.Domain.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bertoni.Domain.Entity.dll": {}
+        }
+      },
+      "Bertoni.Infraestructure.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Bertoni.Infraestructure.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bertoni.Infraestructure.Entity.dll": {}
+        }
+      },
+      "Bertoni.Service.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Bertoni.Service.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bertoni.Service.Entity.dll": {}
+        }
       }
     }
   },
@@ -786,11 +816,29 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "Bertoni.Domain.Entity/1.0.0": {
+      "type": "project",
+      "path": "../Bertoni.Domain.Entity/Bertoni.Domain.Entity.csproj",
+      "msbuildProject": "../Bertoni.Domain.Entity/Bertoni.Domain.Entity.csproj"
+    },
+    "Bertoni.Infraestructure.Entity/1.0.0": {
+      "type": "project",
+      "path": "../Bertoni.Infraestructure.Entity/Bertoni.Infraestructure.Entity.csproj",
+      "msbuildProject": "../Bertoni.Infraestructure.Entity/Bertoni.Infraestructure.Entity.csproj"
+    },
+    "Bertoni.Service.Entity/1.0.0": {
+      "type": "project",
+      "path": "../Bertoni.Service.Entity/Bertoni.Service.Entity.csproj",
+      "msbuildProject": "../Bertoni.Service.Entity/Bertoni.Service.Entity.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "AutoMapper >= 9.0.0"
+      "AutoMapper >= 9.0.0",
+      "Bertoni.Domain.Entity >= 1.0.0",
+      "Bertoni.Infraestructure.Entity >= 1.0.0",
+      "Bertoni.Service.Entity >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -800,11 +848,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.WebApp\\Bertoni.WebApp.csproj",
-      "projectName": "Bertoni.WebApp",
-      "projectPath": "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.WebApp\\Bertoni.WebApp.csproj",
+      "projectUniqueName": "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.Transversal\\Bertoni.Transversal.csproj",
+      "projectName": "Bertoni.Transversal",
+      "projectPath": "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.Transversal\\Bertoni.Transversal.csproj",
       "packagesPath": "C:\\Users\\naldo\\.nuget\\packages\\",
-      "outputPath": "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.WebApp\\obj\\",
+      "outputPath": "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.Transversal\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -822,7 +870,17 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.Domain.Entity\\Bertoni.Domain.Entity.csproj": {
+              "projectPath": "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.Domain.Entity\\Bertoni.Domain.Entity.csproj"
+            },
+            "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.Infraestructure.Entity\\Bertoni.Infraestructure.Entity.csproj": {
+              "projectPath": "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.Infraestructure.Entity\\Bertoni.Infraestructure.Entity.csproj"
+            },
+            "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.Service.Entity\\Bertoni.Service.Entity.csproj": {
+              "projectPath": "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.Service.Entity\\Bertoni.Service.Entity.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -850,9 +908,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

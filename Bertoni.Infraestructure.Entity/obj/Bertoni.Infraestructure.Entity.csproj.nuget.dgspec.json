@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.WebApp\\Bertoni.WebApp.csproj": {}
+    "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.Infraestructure.Entity\\Bertoni.Infraestructure.Entity.csproj": {}
   },
   "projects": {
-    "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.WebApp\\Bertoni.WebApp.csproj": {
+    "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.Infraestructure.Entity\\Bertoni.Infraestructure.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.WebApp\\Bertoni.WebApp.csproj",
-        "projectName": "Bertoni.WebApp",
-        "projectPath": "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.WebApp\\Bertoni.WebApp.csproj",
+        "projectUniqueName": "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.Infraestructure.Entity\\Bertoni.Infraestructure.Entity.csproj",
+        "projectName": "Bertoni.Infraestructure.Entity",
+        "projectPath": "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.Infraestructure.Entity\\Bertoni.Infraestructure.Entity.csproj",
         "packagesPath": "C:\\Users\\naldo\\.nuget\\packages\\",
-        "outputPath": "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.WebApp\\obj\\",
+        "outputPath": "D:\\DOCUMENTOS\\Proyectos\\BertoniSolutions\\BertoniSolutions\\Bertoni.Infraestructure.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -40,12 +40,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "dependencies": {
-            "AutoMapper": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -57,9 +51,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
