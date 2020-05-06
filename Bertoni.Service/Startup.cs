@@ -40,6 +40,8 @@ namespace Bertoni.Service
 
             services.AddScoped<InterfaceAlbumDomain, AlbumDomain>();
             services.AddScoped<InterfaceAlbumRepository<AlbumOutputModel>, AlbumRepository>();
+            services.AddScoped<InterfacePhotoDomain, PhotoDomain>();
+            services.AddScoped<InterfacePhotoRepository<PhotoOutputModel>, PhotoRepository>();
 
         }
 
