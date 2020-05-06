@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using AutoMapper;
 using Bertoni.Domain;
@@ -34,6 +35,8 @@ namespace Bertoni.Service
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddCors();
+
 
             IMapper iMapper = Maps.InitMapper();
             services.AddSingleton(iMapper);
@@ -42,7 +45,6 @@ namespace Bertoni.Service
             services.AddScoped<InterfaceAlbumRepository<AlbumOutputModel>, AlbumRepository>();
             services.AddScoped<InterfacePhotoDomain, PhotoDomain>();
             services.AddScoped<InterfacePhotoRepository<PhotoOutputModel>, PhotoRepository>();
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -62,6 +64,13 @@ namespace Bertoni.Service
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseCors(builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyHeader()
+                       .AllowAnyMethod();
             });
         }
     }

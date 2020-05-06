@@ -6,6 +6,7 @@ using AutoMapper;
 using Bertoni.Domain;
 using Bertoni.Service.Entity;
 using Bertoni.Transversal;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,6 +14,7 @@ namespace Bertoni.Service.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [DisableCors]
     public class PhotoController : ControllerBase
     {
         private readonly IMapper _mapper;

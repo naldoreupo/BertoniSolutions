@@ -1,20 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import { AlbumService } from './album.service';
+import { AlbumService } from '../album.service';
+
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-album',
+  templateUrl: './album.component.html',
+  styleUrls: ['./album.component.css']
 })
-export class AppComponent  implements OnInit  {
+export class AlbumComponent implements OnInit {
   albums;
   constructor(private apiService: AlbumService) { }
 
-  title = 'App';  ngOnInit(): void {
+  ngOnInit(): void {
     debugger;
     this.apiService.getAll().subscribe((data)=>{
       console.log(data);
       this.albums = data['list'];
     });
   }
+
 }
