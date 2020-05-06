@@ -1,0 +1,5 @@
+D:\DOCUMENTOS\Proyectos\BertoniSolutions\BertoniSolutions\Bertoni.Service\obj\Debug\netcoreapp3.1\Bertoni.Service.csprojAssemblyReference.cache
+D:\DOCUMENTOS\Proyectos\BertoniSolutions\BertoniSolutions\Bertoni.Service\obj\Debug\netcoreapp3.1\Bertoni.Service.csproj.CoreCompileInputs.cache
+D:\DOCUMENTOS\Proyectos\BertoniSolutions\BertoniSolutions\Bertoni.Service\obj\Debug\netcoreapp3.1\Bertoni.Service.MvcApplicationPartsAssemblyInfo.cache
+D:\DOCUMENTOS\Proyectos\BertoniSolutions\BertoniSolutions\Bertoni.Service\obj\Debug\netcoreapp3.1\Bertoni.Service.AssemblyInfoInputs.cache
+D:\DOCUMENTOS\Proyectos\BertoniSolutions\BertoniSolutions\Bertoni.Service\obj\Debug\netcoreapp3.1\Bertoni.Service.AssemblyInfo.cs

@@ -8,4 +8,13 @@
     <PackageReference Include="AutoMapper" Version="9.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Bertoni.Domain.Entity\Bertoni.Domain.Entity.csproj" />
+    <ProjectReference Include="..\Bertoni.Domain\Bertoni.Domain.csproj" />
+    <ProjectReference Include="..\Bertoni.Infraestructure.Entity\Bertoni.Infraestructure.Entity.csproj" />
+    <ProjectReference Include="..\Bertoni.Infraestructure\Bertoni.Infraestructure.csproj" />
+    <ProjectReference Include="..\Bertoni.Service.Entity\Bertoni.Service.Entity.csproj" />
+    <ProjectReference Include="..\Bertoni.Service\Bertoni.Service.csproj" />
+  </ItemGroup>
+
 </Project>

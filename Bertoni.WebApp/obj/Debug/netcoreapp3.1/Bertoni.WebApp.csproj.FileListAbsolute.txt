@@ -1,0 +1,7 @@
+D:\DOCUMENTOS\Proyectos\BertoniSolutions\BertoniSolutions\Bertoni.WebApp\obj\Debug\netcoreapp3.1\Bertoni.WebApp.csprojAssemblyReference.cache
+D:\DOCUMENTOS\Proyectos\BertoniSolutions\BertoniSolutions\Bertoni.WebApp\obj\Debug\netcoreapp3.1\Bertoni.WebApp.csproj.CoreCompileInputs.cache
+D:\DOCUMENTOS\Proyectos\BertoniSolutions\BertoniSolutions\Bertoni.WebApp\obj\Debug\netcoreapp3.1\Bertoni.WebApp.MvcApplicationPartsAssemblyInfo.cache
+D:\DOCUMENTOS\Proyectos\BertoniSolutions\BertoniSolutions\Bertoni.WebApp\obj\Debug\netcoreapp3.1\Bertoni.WebApp.RazorAssemblyInfo.cache
+D:\DOCUMENTOS\Proyectos\BertoniSolutions\BertoniSolutions\Bertoni.WebApp\obj\Debug\netcoreapp3.1\Bertoni.WebApp.RazorAssemblyInfo.cs
+D:\DOCUMENTOS\Proyectos\BertoniSolutions\BertoniSolutions\Bertoni.WebApp\obj\Debug\netcoreapp3.1\Bertoni.WebApp.AssemblyInfoInputs.cache
+D:\DOCUMENTOS\Proyectos\BertoniSolutions\BertoniSolutions\Bertoni.WebApp\obj\Debug\netcoreapp3.1\Bertoni.WebApp.AssemblyInfo.cs
